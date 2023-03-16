@@ -2,10 +2,11 @@ import { Link } from "react-router-dom";
 import { NavLink, Outlet } from "react-router-dom";
 import './App.css';
 import Navuser from "./components/Navuser";
+import { HelmetProvider } from 'react-helmet-async';
 
 export default function App() {
   return (
-    <>
+    <HelmetProvider>
       <header>
         <nav className="container">
           <Link to="/"><h1>DSDemo</h1></Link>
@@ -27,6 +28,6 @@ export default function App() {
         </nav>
       </header>
       <Outlet />
-    </>
+    </HelmetProvider>
   )
 }
