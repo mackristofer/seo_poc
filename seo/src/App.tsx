@@ -5,9 +5,8 @@ import Navuser from "./components/Navuser";
 import { HelmetProvider } from 'react-helmet-async';
 
 export default function App() {
-  const helmetContext = {};
   return (
-    <HelmetProvider context={helmetContext}>
+    <HelmetProvider>
       <header>
         <nav className="container">
           <Link to="/"><h1>DSDemo</h1></Link>
