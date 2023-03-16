@@ -4,7 +4,7 @@ import { readFile } from "fs";
 import getPostById  from './stub/posts.js';
 const app = express();
 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 80;
 const indexPath  = resolve('dist', 'index.html');
 
 // static resources should just be served as they are
