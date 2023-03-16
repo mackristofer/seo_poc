@@ -3,7 +3,7 @@ import Helmet from 'react-helmet';
 export default function Welcome() {
     return (
         <>
-            <Helmet>
+            <Helmet async>
                 <meta property="og:type" content="website" />
                 <meta property="og:title" content="Teste de preview da tag title" />
                 <meta property="og:description" content="Teste de preview da tag description" />
