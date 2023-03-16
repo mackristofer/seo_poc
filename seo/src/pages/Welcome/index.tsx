@@ -4,6 +4,10 @@ export default function Welcome() {
     return (
         <>
             <Helmet>
+                <meta charSet="UTF-8" />
+                <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+                <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+                <title>SEO</title>
                 <meta property='og:type' content='website' />
                 <meta property='og:title' content='Teste de preview da tag title' />
                 <meta property='og:description' content='Teste de preview da tag description' />
