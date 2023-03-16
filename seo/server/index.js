@@ -5,11 +5,11 @@ const { getPostById } = require('./stub/posts');
 const app = express();
 
 const PORT = process.env.PORT || 3000;
-const indexPath  = path.resolve(__dirname, '..', 'build', 'index.html');
+const indexPath  = path.resolve(__dirname, '..', 'dist', 'index.html');
 
 // static resources should just be served as they are
 app.use(express.static(
-    path.resolve(__dirname, '..', 'build'),
+    path.resolve(__dirname, '..', 'dist'),
     { maxAge: '30d' },
 ));
 // here we serve the index.html page
