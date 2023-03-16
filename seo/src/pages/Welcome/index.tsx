@@ -1,8 +1,8 @@
-import { Helmet } from 'react-helmet-async';
+import { Helmet, HelmetProvider } from 'react-helmet-async';
 
 export default function Welcome() {
     return (
-        <div>
+        <HelmetProvider>
           <Helmet>
                 <meta property='og:type' content='website' />
                 <meta content='Teste de preview da tag title' property='og:title' />
@@ -19,7 +19,7 @@ export default function Welcome() {
             <main className='main-body container'>
                 <h2>Bem-vindos!</h2>
             </main>
-        </div>
+        </HelmetProvider>
         
     );
 }
